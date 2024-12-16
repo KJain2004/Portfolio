@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17a314c692.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                 <p>Problem Solver | Tech Learner</p>
+               <h1>Hi, I'm <span>Khushi</span> Jain</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------------about------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Khushi.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am an MCA student passionate about coding and software development, with strong communication and presentation skills. I’ve worked on projects like the 'Cash Counter Application' and worked on few websites.
+                     I enjoy learning new technologies and creating impactful solutions, constantly striving to improve my technical expertise and creativity.</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>I have hands-on experience in designing interactive websites using HTML, CSS, and JavaScript, with a focus on responsive and functional layouts.</li>
+                            <li><span>App Development</span><br>Experienced in building functional and engaging desktop applications using technologies like C, C++ and Java emphasizing user-friendly designs and functionality.</li>
+                            <li><span>Database Management</span><br>I have foundational knowledge in using MySQL to manage and query relational databases for efficient data handling in projects.</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>WeatherInsight</span><br>.</li>Weather Insight is a user-friendly website providing real-time weather updates for any city using the OpenWeatherMap API. It features dynamic weather icons, error handling, and a responsive design. A transparent card over a video background displays temperature, humidity, wind speed, and conditions, offering a sleek and modern experience.
+                            <li><span>Cash Counter App</span><br>"The Cash Counter App is a user-friendly application designed to streamline cash management for businesses. Built with Java and a focus on simplicity, it allows users to efficiently calculate totals, track transactions, and maintain records. This project reflects my skills in software development, problem-solving, and creating practical solutions for everyday tasks."</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor Of Computer Application</span><br>2020-2023</li>
+                            <li><span>Master Of Computer Application</span><br>2023-2025</li>  
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------sevices---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Building mobile or desktop applications tailored to your business needs. Familiar with Android, iOS, and cross-platform technologies.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Project Support</h2>
+                    <p>Assisting in coding, debugging, and improving projects as part of a team. Willing to learn and adapt to meet project requirements.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/weather.png">
+                    <div class="layer">
+                        <h3>WeatherWhiz</h3>
+                        <p>"A website providing real-time updates on temperature, humidity, and forecasts through live API integration, ensuring accurate and timely weather insights."</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work.jpg">
+                    <div class="layer">
+                        <h3>Cash Counter App</h3>
+                        <p>This project reflects my skills in software development, problem-solving, and creating practical solutions for everyday tasks."</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.png">
+                    <div class="layer">
+                        <h3>WeatherWhiz</h3>
+                        <p>"A website providing real-time updates on temperature, humidity, and forecasts through live API integration, ensuring accurate and timely weather insights."</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!---------------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>kj0133793@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9636887306</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/the_endless_verse/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/khushi-jain"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/KJain2004"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/KhushiJainRESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text", name="Name" placeholder="Your Name" required>
+                        <input type="email", name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabcontents = document.getElementsByClassName("tab-contents");
+
+          function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+          }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxD-TubqFH38ZZamf_sionJWafQSqFsV8yoDEWeMmUXfc61AgMrlz2rVQZxVxAaoimR/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                
+              .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>
